@@ -43,7 +43,7 @@ def write_bq(df: pd.DataFrame) -> None:
 def etl_gcs_to_bq():
     """Main ETL flow to load data into Big Query"""
     color = "yellow"
-    year = 2021
+    year = 2020
     month = 1
 
     path = extract_from_gcs(color, year, month)
