@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_DB: "ny_taxi"
+      POSTGRES_USER: "root"
+      POSTGRES_PASSWORD: "root"
+    volumes:
+      - /home/timur/ZOOMCAMP/ny_taxi_postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
